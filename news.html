@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Стройбизнес</title>
+    <style>
+        .nav-link:hover,
+        .nav-link:focus,
+        .nav-link.active {
+          background-color: transparent !important;
+          color: inherit !important; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid otstup-menu">
+            <a class="navbar-brand" href="index.html">
+                <img src="Логотип.png" alt="logo" width="140" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about_us.html">Что мы делаем</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Новости</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <img src = "search.png" class = "vector-menu">
+              </li>
+            </ul>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Москва
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                  <li><a class="dropdown-item" href="#">Волгоград</a></li>
+                  <li><a class="dropdown-item" href="#">Челябинск</a></li>
+                  <li><a class="dropdown-item" href="#">Красноярск</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">zulkarv@mail.ru</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">+7(351)217-90-20</a>
+              </li>
+            </ul>
+
+            
+            <a class="nav-link active" aria-current="page" href="sign_in.html">Вход</a>
+            
+          </div>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Стройбизнес</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="about_us.html">Что мы делаем</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Новости</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacts.html">
+                    Контакты
+                  </a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link" href="#">Поиск</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link" href="sign_in.html">Вход</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link active">zulkarv@mail.ru</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link active">+7(351)217-90-20</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+    </nav>
+
+    <div class = "background-2">
+        <div class = "otstup-menu-2">
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link txt-white" aria-current="page" href="#">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link txt-white" href="#">Логистика</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link txt-white" href="#">Галерея</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link txt-white" href = '#'>О ЖБИ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link txt-white" href="#">Документация</a>
+                  </li>
+              </ul>
+        </div>
+    </div>
+
+    <div class = "mb-3"></div>
+
+    <div class = "otstup-blocks-news">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Новости</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class = "mb-1"></div>
+
+    <div class = "otstup-blocks-news">
+      <h2>Новости</h2>
+    </div>
+    
+    <div class = "otstup-blocks main-block">
+        <div class = "mb-3"></div>
+        <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+                <img src="Rectangle 390.png" alt="Happy New Year" class = "photo-news">
+            </div>
+            <div class="flex-grow-1 ms-5 me-5">
+              <p class = "txt-footer txt-gray">1 января 2025</p>
+              <h3>Поздравляем с новым 2025 годом!</h3>
+              <p class = "txt-bold regular">В преддверии Нового 2025 года обособленное подразделение «350 Завод железобетонных изделий», подводит итоги уходящего 2019 года. За 2019 год усовершенствована система менеджмента, расширена сфера и улучшено качество предоставляемых услуг.</p>
+              <a type="button" class="btn btn-download sharp-angle txt-black p-2" href = "news_example.html">Читать новость</a>
+            </div>
+        </div>
+
+        <div class = "mb-5"></div>
+
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0">
+              <img src="Rectangle 390-1.png" alt="Завод-1" class = "photo-news">
+          </div>
+          <div class="flex-grow-1 ms-5 me-5">
+            <p class = "txt-footer txt-gray">1 января 2025</p>
+            <h3>Новая линия по производству ж/б свай сечением 300х300 мм</h3>
+            <p class = "txt-bold regular">С 1 октября 2019 г. введена  в эксплуатацию новая линия 
+              по производству ж/б свай сечением 300х300 мм ,мощностью до 432 п.м. в сутки и длинной 
+              до 14 м.
+            </p>
+            <button type="button" class="btn btn-download sharp-angle txt-black p-2">Читать новость</button>
+          </div>
+        </div>
+
+      <div class = "mb-5"></div>
+
+      <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+            <img src="Rectangle 390-2.png" alt="Завод-2" class = "photo-news">
+        </div>
+        <div class="flex-grow-1 ms-5 me-5">
+          <p class = "txt-footer txt-gray">1 января 2025</p>
+          <h3>Производство изделий ПО-2м</h3>
+          <p class = "txt-bold regular">По состоянию на 17.10.2019 г. разработаны 
+            Технические условия и рабочая конструкторская документация для 
+            изготовления новых железо-бетонных изделий. 
+            Заключен долгосрочный договор на поставку.
+          </p>
+          <button type="button" class="btn btn-download sharp-angle txt-black p-2">Читать новость</button>
+        </div>
+      </div>
+
+      <div class = "mb-5"></div>
+
+      <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+            <img src="Rectangle 390-3.png" alt="Завод-3" class = "photo-news">
+        </div>
+        <div class="flex-grow-1 ms-5 me-5">
+          <p class = "txt-footer txt-gray">1 января 2025</p>
+          <h3>Производство изделий в этом году</h3>
+          <p class = "txt-bold regular">С 1 октября 2024 г. введена  в эксплуатацию новая линия 
+            по производству ж/б свай сечением 300х300 мм ,мощностью до 432 п.м. 
+            в сутки и длинной 
+            до 14 м.
+          </p>
+          <button type="button" class="btn btn-download sharp-angle txt-black p-2">Читать новость</button>
+        </div>
+      </div>
+
+      <div class = "mb-5"></div>
+
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0">
+              <img src="Rectangle 390-4.png" alt="Завод-4" class = "photo-news">
+          </div>
+          <div class="flex-grow-1 ms-5 me-5">
+            <p class = "txt-footer txt-gray">1 января 2025</p>
+            <h3>Новая линия по производству ж/б свай сечением 300х300 мм</h3>
+            <p class = "txt-bold regular">С 1 октября 2019 г. введена  в эксплуатацию новая линия 
+              по производству ж/б свай сечением 300х300 мм ,мощностью до 432 п.м. в сутки и длинной 
+              до 14 м.
+            </p>
+            <button type="button" class="btn btn-download sharp-angle txt-black p-2">Читать новость</button>
+          </div>
+        </div>
+
+        <div class = "mb-5"></div>
+
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0">
+              <img src="Rectangle 390-5.png" alt="Завод-5" class = "photo-news">
+          </div>
+          <div class="flex-grow-1 ms-5 me-5">
+            <p class = "txt-footer txt-gray">1 января 2025</p>
+            <h3>Производство изделий ПО-2м</h3>
+            <p class = "txt-bold regular">По состоянию на 17.10.2019 г. разработаны 
+              Технические условия и рабочая конструкторская документация для 
+              изготовления новых железо-бетонных изделий. 
+              Заключен долгосрочный договор на поставку.
+            </p>
+            <button type="button" class="btn btn-download sharp-angle txt-black p-2">Читать новость</button>
+          </div>
+        </div>
+
+    </div>
+
+    <div class = "d-flex-1195px block-1195px row">
+      <div class = "col otstup-blocks-news">
+        <p class = "txt-footer txt-gray">1 января 2025</p>
+        <h3>Поздравляем с новым 2025 годом!</h3>
+        <p class = "txt-bold regular">В преддверии Нового 2025 года обособленное подразделение «350 Завод железобетонных изделий», подводит итоги уходящего 2019 года. За 2019 год усовершенствована система менеджмента, расширена сфера и улучшено качество предоставляемых услуг.</p>
+
+        <div class = "mb-3"></div>
+        <a type="button" class="btn btn-download sharp-angle txt-black p-2" href = "news_example.html">Читать новость</a>
+        <div class = "mb-3"></div>
+        <img src = "Rectangle 390.png" class = "photo-news" alt = "Happy new year">
+      </div>
+
+      <div class = "mb-5"></div>
+
+      <div class = "col otstup-blocks-news">
+        <p class = "txt-footer txt-gray">1 января 2025</p>
+        <h3>Новая линия по производству ж/б свай сечением 300х300 мм</h3>
+        <p class = "txt-bold regular">
+          По состоянию на 17.10.2019 г. разработаны 
+          Технические условия и рабочая конструкторская документация для 
+          изготовления новых железо-бетонных изделий. 
+          Заключен долгосрочный договор на поставку.
+        </p>
+        <div class = "mb-3"></div>
+        <button type="button" class="btn btn-download sharp-angle txt-black p-2">Читать новость</button>
+        <div class = "mb-3"></div>
+        <img src = "Rectangle 390-1.png" class = "photo-news" alt = "Завод-1">
+      </div>
+
+      <div class = "mb-5"></div>
+
+      <div class = "col otstup-blocks-news">
+        <p class = "txt-footer txt-gray">1 января 2025</p>
+        <h3>Производство изделий ПО-2м</h3>
+        <p class = "txt-bold regular">
+          С 1 октября 2019 г. введена  в эксплуатацию новая линия 
+          по производству ж/б свай сечением 300х300 мм ,мощностью до 432 п.м. в сутки и 
+          длинной до 14 м.
+        </p>
+        <div class = "mb-3"></div>
+        <button type="button" class="btn btn-download sharp-angle txt-black p-2">Читать новость</button>
+        <div class = "mb-3"></div>
+        <img src = "Rectangle 390-2.png" class = "photo-news" alt = "Завод-2">
+      </div>
+
+      <div class = "mb-5"></div>
+
+      <div class = "col otstup-blocks-news">
+        <p class = "txt-footer txt-gray">1 января 2025</p>
+        <h3>Производство изделий в этом году</h3>
+        <p class = "txt-bold regular">
+          С 1 октября 2024 г. введена  в эксплуатацию новая линия 
+          по производству ж/б свай сечением 300х300 мм ,мощностью до 432 п.м. 
+          в сутки и длинной 
+          до 14 м.
+        </p>
+        <div class = "mb-3"></div>
+        <button type="button" class="btn btn-download sharp-angle txt-black p-2">Читать новость</button>
+        <div class = "mb-3"></div>
+        <img src = "Rectangle 390-3.png" class = "photo-news" alt = "Завод-3">
+      </div>
+
+      <div class = "mb-5"></div>
+
+      <div class = "col otstup-blocks-news">
+        <p class = "txt-footer txt-gray">1 января 2025</p>
+        <h3>Новая линия по производству ж/б свай сечением 300х300 мм</h3>
+        <p class = "txt-bold regular">
+          По состоянию на 17.10.2019 г. разработаны 
+          Технические условия и рабочая конструкторская документация для 
+          изготовления новых железо-бетонных изделий. 
+          Заключен долгосрочный договор на поставку.
+        </p>
+        <div class = "mb-3"></div>
+        <button type="button" class="btn btn-download sharp-angle txt-black p-2">Читать новость</button>
+        <div class = "mb-3"></div>
+        <img src = "Rectangle 390-4.png" class = "photo-news" alt = "Завод-4">
+      </div>
+
+      <div class = "mb-5"></div>
+
+      <div class = "col otstup-blocks-news">
+        <p class = "txt-footer txt-gray">1 января 2025</p>
+        <h3>Производство изделий ПО-2м</h3>
+        <p class = "txt-bold regular">
+          С 1 октября 2019 г. введена  в эксплуатацию новая линия 
+          по производству ж/б свай сечением 300х300 мм ,мощностью до 432 п.м. в сутки и 
+          длинной до 14 м.
+        </p>
+        <div class = "mb-3"></div>
+        <button type="button" class="btn btn-download sharp-angle txt-black p-2">Читать новость</button>
+        <div class = "mb-3"></div>
+        <img src = "Rectangle 390-5.png" class = "photo-news" alt = "Завод-5">
+      </div>
+
+    </div>
+
+    <div class = "mb-5"></div>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link txt-black" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link txt-black" href="#">1</a></li>
+        <li class="page-item"><a class="page-link txt-black" href="#">2</a></li>
+        <li class="page-item"><a class="page-link txt-black" href="#">3</a></li>
+        <li class="page-item"><a class="page-link txt-black" href="#">4</a></li>
+        <li class="page-item"><a class="page-link txt-black" href="#">5</a></li>
+        <li class="page-item"><a class="page-link txt-black" href="#">6</a></li>
+        <li class="page-item">
+          <a class="page-link txt-black" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class = "mb-5"></div>
+
+    <div class = "footer">
+        <div class = "otstup-blocks otstup-blocks-2">
+          <div class="d-flex row p-2">
+            <div class = "col">
+              <div class = "mb-5"></div>
+              <p class = "txt-footer txt-white">Группа компаний Стройбизнес</p>
+            </div>
+    
+            <div class = "col">
+              <div class = "mb-5"></div>
+              <p class = "txt-footer-sm">Офис в Челябинске</p>
+              <p class = "txt-footer txt-white">ул.Маслобазовая, 5/2</p>
+              <p class = "txt-footer-sm">Склад в Челябинске</p>
+              <p class = "txt-footer txt-white">ул.Маслобазовая, 5/2</p>
+              <p class = "txt-footer-sm">Отдел сбыта (пн-пт 8:00-18:00, сб 8:00-15:00)</p>
+              <p class = "txt-footer txt-white">+7(351)217-90-20, 777-36-33</p>
+              <p class = "txt-footer-sm">Email</p>
+              <p class = "txt-footer txt-white">info@sb74.biz</p>
+            </div>
+    
+            <div class = "col">
+              <div class = "mb-5"></div>
+              <p class = "txt-footer txt-white">Продукция ЖБИ</p>
+              <p class = "txt-footer txt-white">Ремонт дорог</p>
+              <p class = "txt-footer txt-white">Низкострой</p>
+              <p class = "txt-footer txt-white">Аренда площадей</p>
+            </div>
+    
+            <div class = "col">
+              <div class = "mb-5"></div>
+              <form class="col-auto">
+                <p class = "txt-sm txt-white"> Получайте свежие новости </p>
+                <div class="col-sm justify-content-center">
+                  <input type="email" class="form-control sharp-angle" placeholder="your@gmail.com" aria-label="Email">
+                </div>
+                <div class = "mb-3"></div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-sign-up sharp-angle txt-black">Подписаться</button>
+                </div>
+              </form>
+            </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+</body>
+</html>
