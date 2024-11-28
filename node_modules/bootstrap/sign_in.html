@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Вход</title>
+    <style>
+      body{ 
+        background: url('Rectangle\ 284.png') no-repeat;
+        background-size: 190% 190%;
+        padding: 50px 20px;
+      }
+      </style>
+</head>
+<body>
+    <div class = "mb-4"></div>
+    <h2 class = "text-center"><a class = "navbar-brand logo" href= "index.html">Стройбизнес</a></h2>
+    <div>
+        <nav>
+            <div class="nav justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link active txt-white" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Вход</button>
+              <button class="nav-link txt-white" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Регистрация</button>
+            </div>
+        </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active justify-content-center" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+
+                <div class="card text-center otstup-menu">
+
+                    <div class="card-header txt-large">
+                      Войдите в свой аккаунт
+                    </div>
+
+                    <div class="card-body">
+                        <form method="post" action="index.html" id="loginForm" onsubmit="login(event)">
+                            <div class="row mb-3">
+                              <label for="inputEmail3" class="col-sm-2 col-form-label">Почта</label>
+                              <div class="col-sm-10">
+                                <input type="email" class="form-control" id = "email" required>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <label for="inputPassword3" class="col-sm-2 col-form-label">Пароль</label>
+                              <div class="col-sm-10">
+                                <input type="password" class="form-control" id="password" required>
+                              </div>
+                            </div>
+                            <div id="error-message" class="alert alert-danger d-none" role="alert">
+                                Пожалуйста, заполните все поля! 
+                            </div>
+                            <button type="submit" class="btn btn-sign-up-2" id="liveAlertBtn">Войти</button>
+                        </form>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Введите вашу почту</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                                </form>   
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-sign-up-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Отправить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2"></h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body txt-large">
+                              Письмо отправлено на вашу почту 
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-sign-up-2" data-bs-dismiss="modal">OK</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer text-body-secondary pointer" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      Забыли пароль?
+                    </div>
+                  </div>
+
+            </div>
+            <div class="tab-pane fade justify-content-center" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="card text-center otstup-menu">
+                    <div class="card-header txt-large">
+                      Добро пожаловать
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="index.html" id="loginForm" onsubmit="login(event)">
+                            <div class="row mb-3">
+                              <label for="inputEmail3" class="col-sm-2 col-form-label">Почта</label>
+                              <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email_1" required>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <label for="inputPassword3" class="col-sm-2 col-form-label">Пароль</label>
+                              <div class="col-sm-10">
+                                <input type="password" class="form-control" id="password_1" required>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Пароль</label>
+                                <div class="col-sm-10">
+                                  <input type="password" class="form-control" id="password_1" required>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-sign-up-2" onclick="login()">Зарегестрироваться</button>
+                        </form>
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div> 
+
+    <script>
+        function login(event) {
+            event.preventDefault();  // Остановка стандартной отправки формы
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            const email1 = document.getElementById("email_1").value;
+            const password1 = document.getElementById("password_1").value;
+
+            if (email === "" || password === "") {
+                document.getElementById("error-message").classList.remove("d-none");
+            } else {
+                localStorage.setItem("loginSuccess", "true");
+                window.location.href = "index.html";
+            }
+
+            if (email1 === "" || password1 === "") {
+                document.getElementById("error-message").classList.remove("d-none");
+            } else {
+                localStorage.setItem("loginSuccess", "true");
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Стройбизнес</title>
+    <style>
+        .nav-link:hover,
+        .nav-link:focus,
+        .nav-link.active {
+          background-color: transparent !important;
+          color: inherit !important; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid otstup-menu">
+            <a class="navbar-brand" href="index.html">
+                <img src="Логотип.png" alt="logo" width="140" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about_us.html">Что мы делаем</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="news.html">Новости</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <img src = "search.png" class = "vector-menu">
+              </li>
+            </ul>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Москва
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                  <li><a class="dropdown-item" href="#">Волгоград</a></li>
+                  <li><a class="dropdown-item" href="#">Челябинск</a></li>
+                  <li><a class="dropdown-item" href="#">Красноярск</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">zulkarv@mail.ru</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">+7(351)217-90-20</a>
+              </li>
+            </ul>
+
+            
+            <a class="nav-link active" aria-current="page" href="sign_in.html">Вход</a>
+            
+          </div>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Стройбизнес</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="about_us.html">Что мы делаем</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">Новости</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacts.html">
+                    Контакты
+                  </a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link" href="#">Поиск</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link" href="sign_in.html">Вход</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link active">zulkarv@mail.ru</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link active">+7(351)217-90-20</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+    </nav>
+
+    <div class = "background-2">
+        <div class = "otstup-menu-2">
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link txt-white" aria-current="page" href="#">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link txt-white" href="#">Логистика</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link txt-white" href="#">Галерея</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link txt-white" href = '#'>О ЖБИ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link txt-white" href="#">Документация</a>
+                  </li>
+              </ul>
+        </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class = "slider-1 p-6-my">
+                <p class = "txt-footer txt-white text-center">С Т Р О Й Б И З Н Е С</h1>
+                <h2 class = "text-center txt-white txt-375">Мы производим железобетонные изделия и комплектуем строительные объекты</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class = "slider-2 p-6-my">
+                <h2 class = "txt-white txt-375">Большое внимание уделяется контролю качества, осуществляемому на 
+                    всех этапах производства
+                </h2>
+                <p class = "txt-regula txt-white">Обладая собственным производством, мы 
+                    можем изготовить железобетонные изделия по Вашему заказу, либо в кратчайшие сроки поставить Вам необходимую партию стандартных ЖБИ.
+                </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+                <div class = "slider-3 p-7-my">
+                    <div class="container">
+                        <div class="row text-center text-white">
+                            <div class="col-12 col-md-4 mb-4">
+                                <h1 class="txt-slider-3 fw-bold">11 855</h1>
+                                <p class="mb-0">позиций, номенклатура ЖБИ</p>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <h1 class=" txt-slider-3 fw-bold">18 779 м<sup>2</sup></h1>
+                                <p class="mb-0">производственных и складских площадей</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <h1 class="txt-slider-3 fw-bold">24 000 м<sup>3</sup></h1>
+                                <p class="mb-0">объем производства в год</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+          </div>
+          <div class="carousel-item">
+            <div class = "slider-4 p-8-my">
+                <div class="container form-container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12 mb-4 mb-lg-0 form-description">
+                            <h2>Оставьте заявку <br> на консультацию</h2>
+                            <p class = "txt-gray">Оставьте заявку и наши специалисты свяжутся с вами в ближайшее время</p>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Имя и Фамилия" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Телефон" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                                    <input type="file" class="form-control" id="inputGroupFile01">
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="checkbox" class="form-check-input" id="agreement" required>
+                                    <label class="form-check-label" for="agreement">
+                                        Согласен на <a href="#">обработку персональных данных</a>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn submit-btn w-100">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+</body>
+</html>
